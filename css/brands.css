@@ -376,6 +376,9 @@ button:hover,
 .button.button-pxlnic:focus{
   filter: brightness(90%) 
 }
+.icon-pxlnic{
+  filter: invert(28%) sepia(39%) saturate(3514%) hue-rotate(346deg) brightness(111%) contrast(103%);
+}
 
 /* Ko-Fi */
 .button.button-kofi{
@@ -385,4 +388,7 @@ button:hover,
 .button.button-kofi:hover,
 .button.button-kofi:focus{
   filter: brightness(90%) 
+}
+.icon-kofi{
+  filter: invert(99%) sepia(12%) saturate(111%) hue-rotate(332deg) brightness(114%) contrast(100%);
 }
