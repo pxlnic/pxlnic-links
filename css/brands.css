@@ -378,11 +378,11 @@ button:hover,
 }
 
 /* Ko-Fi */
-.button.button-pxlnic{
+.button.button-kofi{
   color: #2d3142;
-  background-color: #13C3FF
+  background-color: #13C3FF 
 }
-.button.button-pxlnic:hover,
-.button.button-pxlnic:focus{
+.button.button-kofi:hover,
+.button.button-kofi:focus{
   filter: brightness(90%) 
 }
