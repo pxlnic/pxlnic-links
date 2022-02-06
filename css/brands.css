@@ -376,3 +376,13 @@ button:hover,
 .button.button-pxlnic:focus{
   filter: brightness(90%) 
 }
+
+/* Ko-Fi */
+.button.button-pxlnic{
+  color: #2d3142;
+  background-color: #13C3FF
+}
+.button.button-pxlnic:hover,
+.button.button-pxlnic:focus{
+  filter: brightness(90%) 
+}
