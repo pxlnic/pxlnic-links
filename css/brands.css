@@ -46,6 +46,7 @@ button {
   white-space: wrap;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out
  }
 button:hover,
 .button:focus {
@@ -365,3 +366,13 @@ button:hover,
 .button.button-xing:hover,
 .button.button-xing:focus {
   filter: brightness(90%) }
+
+/* pxlnic */
+.button.button-pxlnic{
+  color: #f3f4F7;
+  background-color: #2d3142
+}
+.button.button-pxlnic:hover,
+.button.button-pxlnic:focus{
+  filter: brightness(90%) 
+}
