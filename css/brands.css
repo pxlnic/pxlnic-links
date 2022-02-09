@@ -392,3 +392,14 @@ button:hover,
 .icon-kofi{
   filter: invert(99%) sepia(12%) saturate(111%) hue-rotate(332deg) brightness(114%) contrast(100%);
 }
+
+/* Lospec */
+
+.button.button-lospec{
+  color: #eaeaea;
+  background-color: #332f35 
+}
+.button.button-lospec:hover,
+.button.button-lospec:focus{
+  filter: brightness(90%) 
+}
