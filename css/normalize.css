@@ -425,3 +425,15 @@ td,
 th {
   padding: 0;
 }
+
+/* Avatar */
+img.avatar{
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 768px){
+  img.avatar{
+    max-width: 256px
+  }
+}
