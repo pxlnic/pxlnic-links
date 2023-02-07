@@ -403,3 +403,13 @@ button:hover,
 .button.button-lospec:focus{
   filter: brightness(90%) 
 }
+
+/* Backloggd */
+.button.button-backloggd{
+  color: #fff;
+  background-color: #16181c;
+}
+.button.button-backloggd:hover,
+.button.button-backloggd:focus{
+  filter: brightness(90%)
+}
