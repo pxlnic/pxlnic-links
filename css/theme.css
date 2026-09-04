@@ -1,0 +1,201 @@
+/* Dark and Light Theme */
+html {
+  color-scheme: light dark;
+  box-sizing: border-box;
+  transition:
+    background 1s ease,
+    color 1s ease,
+    text-decoration 0.3s ease;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* Light override */
+html:has(input[name="theme"][value="light"]:checked) {
+  color-scheme: light;
+}
+/* Dark override */
+html:has(input[name="theme"][value="dark"]:checked) {
+  color-scheme: dark;
+}
+
+/* pxlnic Color Theme */
+body {
+  &.pxlnic-theme {
+    /* Color Variables */
+    --pxlnic-blue: #1b263e;
+    /* --pxlnic-blue-compliment: #44609c; */
+    --pxlnic-blue-compliment: #384f80;
+    --pxlnic-white: #f4f3f3;
+    --pxlnic-white-compliment: #a7a0a0;
+    --pxlnic-purple: #5a385c;
+    --pxlnic-green: #9fbb54;
+    /* --pxlnic-orange: #c9532c; */
+    /* --pxlnic-orange: #d76b47; */
+    --pxlnic-orange: #d87858;
+
+    /* Dark / Light Pairings */
+    --pxlnic-primary: light-dark(#f4f3f3, #1b263e);
+    --pxlnic-primary-compliment: light-dark(#a7a0a0, #384f80);
+    --pxlnic-alternate: light-dark(#1b263e, #f4f3f3);
+    --pxlnic-alternate-compliment: light-dark(#384f80, #a7a0a0);
+    --pxlnic-heading: light-dark(#5a385c, #9fbb54);
+    --pxlnic-heading-alternate: light-dark(#5a385c, #d87858);
+    --pxlnic-subheading: light-dark(#384f80, #a7a0a0);
+    --pxlnic-accent: light-dark(#d87858, #d87858);
+    --pxlnic-highlight: light-dark(#9fbb54, #9fbb54);
+
+    /* Specific Pairs */
+    /* Base background and font colors */
+    background-color: var(--pxlnic-primary);
+    color: var(--pxlnic-alternate);
+    fill: var(--pxlnic-alternate);
+    stroke: var(--pxlnic-alternate);
+
+    /* Base Classes */
+    .background-primary {
+      background-color: var(--pxlnic-primary);
+    }
+    .background-compliment {
+      background-color: var(--pxlnic-primary-compliment);
+    }
+    .text-primary {
+      color: var(--pxlnic-alternate);
+    }
+    .theme-heading {
+      color: var(--pxlnic-heading);
+      /* text-shadow:
+        -1px -1px 0 var(--pxlnic-primary-compliment),
+        1px -1px 0 var(--pxlnic-primary-compliment),
+        -1px 1px 0 var(--pxlnic-primary-compliment),
+        1px 1px 0 var(--pxlnic-primary-compliment); */
+    }
+    .theme-heading-alternate {
+      color: var(--pxlnic-heading-alternate);
+      /* text-shadow:
+        -1px -1px 0 var(--pxlnic-primary-compliment),
+        1px -1px 0 var(--pxlnic-primary-compliment),
+        -1px 1px 0 var(--pxlnic-primary-compliment),
+        1px 1px 0 var(--pxlnic-primary-compliment); */
+    }
+    .theme-subheading {
+      color: var(--pxlnic-subheading);
+      text-shadow: 1px 1px var(--pxlnic-white);
+    }
+  }
+
+  /* Theme Switcher */
+  .theme-switcher {
+    span {
+      background-color: var(--pxlnic-purple);
+    }
+    input[type="radio"]:not(:is(:checked)) + label {
+      svg {
+        fill: var(--pxlnic-white-compliment);
+        &:hover {
+          fill: var(--pxlnic-white);
+        }
+      }
+    }
+    input[type="radio"]:is(:checked) + label {
+      svg {
+        fill: var(--pxlnic-green);
+      }
+    }
+  }
+
+  /* Links Page */
+  div.links-page-content {
+    h1.heading {
+      color: var(--pxlnic-heading-alternate);
+    }
+    p.sub-heading {
+      color: var(--pxlnic-alternate);
+    }
+    p.separator {
+      color: var(-- pxlnic-alternate-compliment);
+    }
+    hr {
+      color: var(--pxlnic-alternate-compliment);
+      background-color: var(--pxlnic-alternate-compliment);
+    }
+    div.links {
+      a.link {
+        border: 4px solid var(--pxlnic-alternate-compliment);
+        div.logo {
+          background-color: var(--pxlnic-alternate-compliment);
+          &:hover {
+            stroke: var(--pxlnic-accent);
+          }
+          &.ko-fi {
+            -webkit-mask: url(../icons/kofi-icon.svg) no-repeat center;
+            mask: url(../icons/kofi-icon.svg) no-repeat center;
+          }
+          &.shopping-carg {
+            -webkit-mask: url(../icons/shopping-cart-icon.svg) no-repeat center;
+            mask: url(../icons/shopping-cart-icon.svg) no-repeat center;
+          }
+          &.pxlnic {
+            -webkit-mask: url(../icons/pxlnic-icon.svg) no-repeat center;
+            mask: url(../icons/pxlnic-icon.svg) no-repeat center;
+          }
+          &.bluesky {
+            -webkit-mask: url(../icons/bluesky-icon.svg) no-repeat center;
+            mask: url(../icons/bluesky-icon.svg) no-repeat center;
+          }
+          &.instagram {
+            -webkit-mask: url(../icons/instagram-icon.svg) no-repeat center;
+            mask: url(../icons/instagram-icon.svg) no-repeat center;
+          }
+          &.lospec {
+            -webkit-mask: url(../icons/lospec-icon.svg) no-repeat center;
+            mask: url(../icons/lospec-icon.svg) no-repeat center;
+          }
+          &.mastodon {
+            -webkit-mask: url(../icons/mastodon-icon.svg) no-repeat center;
+            mask: url(../icons/mastodon-icon.svg) no-repeat center;
+          }
+          &.threads {
+            -webkit-mask: url(../icons/threads-icon.svg) no-repeat center;
+            mask: url(../icons/threads-icon.svg) no-repeat center;
+          }
+        }
+        img {
+          stroke: var(--pxlnic-alternate-compliment);
+          fill: var(--pxlnic-alternate-compliment);
+          color: var(--pxlnic-alternate-compliment);
+          path {
+            stroke: var(--pxlnic-alternate-compliment);
+            fill: var(--pxlnic-alternate-compliment);
+            color: var(--pxlnic-alternate-compliment);
+          }
+        }
+        p {
+          color: var(--pxlnic-alternate);
+        }
+        &:hover {
+          border: 4px solid var(--pxlnic-accent);
+          svg {
+            stroke: var(--pxlnic-accent);
+            fill: var(--pxlnic-accent);
+            color: var(--pxlnic-accent);
+            path {
+              stroke: var(--pxlnic-accent);
+              fill: var(--pxlnic-accent);
+              color: var(--pxlnic-accent);
+            }
+          }
+          p {
+            color: var(--pxlnic-accent);
+          }
+        }
+      }
+    }
+  }
+}

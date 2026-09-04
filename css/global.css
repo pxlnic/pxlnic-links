@@ -1,0 +1,200 @@
+/* Import "Reset" (based on normalize.css), "Theme", and "Fonts" stylesheets */
+@import "reset.css";
+@import "theme.css";
+@import "fonts.css";
+@import "page.css";
+
+/* Sets baic HTML component styles */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Montserrat, sans-serif;
+  font-size: 1em;
+}
+
+section {
+  scroll-margin-top: 125px;
+}
+
+button {
+  cursor: pointer;
+}
+
+hr {
+  margin: 10px;
+  height: 4px;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: ShareTechMono;
+  scroll-margin-top: 70px;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+}
+
+footer {
+  padding: 20px;
+  max-width: calc(100% - 40px);
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Grid Layouts */
+.grid-heading {
+  grid-column: 1/-1;
+}
+.col-2 {
+  grid-template-rows: repeat(1fr);
+  grid-template-columns: 1fr;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.col-3 {
+  grid-template-rows: repeat(1fr);
+  grid-template-columns: 1fr;
+  @media screen and (min-width: 450px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.col-4 {
+  grid-template-rows: repeat(1fr);
+  grid-template-columns: 1fr;
+  @media screen and (min-width: 450px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.col-5 {
+  grid-template-rows: repeat(1fr);
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (min-width: 450px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.col-6 {
+  grid-template-rows: repeat(1fr);
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (min-width: 450px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.col-7 {
+  grid-template-rows: repeat(1fr);
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (min-width: 450px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+.col-8 {
+  grid-template-rows: repeat(1fr);
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* Grid / Flexbox Gaps */
+.gap-0 {
+  gap: 0px;
+}
+.gap-5 {
+  gap: 5px;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-35 {
+  gap: 35px;
+}
+
+/* CUSTOM COMPONENT SHARED STYLES */
+.rounded-5 {
+  border-radius: 5px;
+}
+.rounded-10 {
+  border-radius: 10px;
+}
+.rounded-full {
+  border-radius: 50%;
+}
+
+/* Content Widths */
+.width-xsmall {
+  max-width: 968px;
+  width: 100%;
+}
+.width-small {
+  max-width: 1024px;
+  width: 100%;
+}
+.width-medium {
+  max-width: 1120px;
+  width: 100%;
+}
+.width-large {
+  max-width: 1280px;
+  width: 100%;
+}
+.width-full {
+  max-width: 100%;
+  width: 100%;
+}
