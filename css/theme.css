@@ -128,52 +128,39 @@ body {
     div.links {
       a.link {
         border: 4px solid var(--pxlnic-alternate-compliment);
-        div.logo {
+        div.icon {
           background-color: var(--pxlnic-alternate-compliment);
-          &:hover {
-            stroke: var(--pxlnic-accent);
-          }
           &.ko-fi {
-            -webkit-mask: url(../icons/kofi-icon.svg) no-repeat center;
-            mask: url(../icons/kofi-icon.svg) no-repeat center;
+            -webkit-mask: url(https://nicreichelt.com/icons/kofi-icon.svg) no-repeat center;
+            mask: url(https://nicreichelt.com/icons/kofi-icon.svg) no-repeat center;
           }
-          &.shopping-carg {
-            -webkit-mask: url(../icons/shopping-cart-icon.svg) no-repeat center;
-            mask: url(../icons/shopping-cart-icon.svg) no-repeat center;
+          &.shopping-cart {
+            -webkit-mask: url(https://nicreichelt.com/icons/shopping-cart-icon.svg) no-repeat center;
+            mask: url(https://nicreichelt.com/icons/shopping-cart-icon.svg) no-repeat center;
           }
           &.pxlnic {
-            -webkit-mask: url(../icons/pxlnic-icon.svg) no-repeat center;
-            mask: url(../icons/pxlnic-icon.svg) no-repeat center;
+            -webkit-mask: url(https://nicreichelt.com/icons/pxlnic-icon.svg) no-repeat center;
+            mask: url(https://nicreichelt.com/icons/pxlnic-icon.svg) no-repeat center;
           }
           &.bluesky {
-            -webkit-mask: url(../icons/bluesky-icon.svg) no-repeat center;
-            mask: url(../icons/bluesky-icon.svg) no-repeat center;
+            -webkit-mask: url(https://nicreichelt.com/icons/bluesky-icon.svg) no-repeat center;
+            mask: url(https://nicreichelt.com/icons/bluesky-icon.svg) no-repeat center;
           }
           &.instagram {
-            -webkit-mask: url(../icons/instagram-icon.svg) no-repeat center;
-            mask: url(../icons/instagram-icon.svg) no-repeat center;
+            -webkit-mask: url(https://nicreichelt.com/icons/instagram-icon.svg) no-repeat center;
+            mask: url(https://nicreichelt.com/icons/instagram-icon.svg) no-repeat center;
           }
           &.lospec {
-            -webkit-mask: url(../icons/lospec-icon.svg) no-repeat center;
-            mask: url(../icons/lospec-icon.svg) no-repeat center;
+            -webkit-mask: url(https://nicreichelt.com/icons/lospec-icon.svg) no-repeat center;
+            mask: url(https://nicreichelt.com/icons/lospec-icon.svg) no-repeat center;
           }
           &.mastodon {
-            -webkit-mask: url(../icons/mastodon-icon.svg) no-repeat center;
-            mask: url(../icons/mastodon-icon.svg) no-repeat center;
+            -webkit-mask: url(https://nicreichelt.com/icons/mastodon-icon.svg) no-repeat center;
+            mask: url(https://nicreichelt.com/icons/mastodon-icon.svg) no-repeat center;
           }
           &.threads {
-            -webkit-mask: url(../icons/threads-icon.svg) no-repeat center;
-            mask: url(../icons/threads-icon.svg) no-repeat center;
-          }
-        }
-        img {
-          stroke: var(--pxlnic-alternate-compliment);
-          fill: var(--pxlnic-alternate-compliment);
-          color: var(--pxlnic-alternate-compliment);
-          path {
-            stroke: var(--pxlnic-alternate-compliment);
-            fill: var(--pxlnic-alternate-compliment);
-            color: var(--pxlnic-alternate-compliment);
+            -webkit-mask: url(https://nicreichelt.com/icons/threads-icon.svg) no-repeat center;
+            mask: url(https://nicreichelt.com/icons/threads-icon.svg) no-repeat center;
           }
         }
         p {
@@ -181,15 +168,8 @@ body {
         }
         &:hover {
           border: 4px solid var(--pxlnic-accent);
-          svg {
-            stroke: var(--pxlnic-accent);
-            fill: var(--pxlnic-accent);
-            color: var(--pxlnic-accent);
-            path {
-              stroke: var(--pxlnic-accent);
-              fill: var(--pxlnic-accent);
-              color: var(--pxlnic-accent);
-            }
+          div.icon {
+            background-color: var(--pxlnic-accent);
           }
           p {
             color: var(--pxlnic-accent);

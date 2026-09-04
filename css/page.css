@@ -32,10 +32,18 @@ main {
         width: calc(100% - 48px);
         max-width: 380px;
         transition: all 0.3s ease;
-        svg {
+        svg,
+        div.icon {
           transition: all 0.3s ease;
           width: 30px;
           height: 30px;
+        }
+        div.icon {
+          display: inline-block;
+          -webkit-mask-size: contain;
+          mask-size: contain;
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
         }
         p {
           transition: all 0.3s ease;
